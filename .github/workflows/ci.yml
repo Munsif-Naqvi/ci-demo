@@ -44,6 +44,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ env.IMAGE_NAME }}/calculator:latest
-            ${{ env.IMAGE_NAME }}:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/calculator:latest
+            ${{ secrets.DOCKER_USERNAME }}/calculator:${{ github.sha }}
+
 
