@@ -44,6 +44,6 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ env.IMAGE_NAME }}:latest
+            ${{ env.IMAGE_NAME }}/calculator:latest
             ${{ env.IMAGE_NAME }}:${{ github.sha }}
 
