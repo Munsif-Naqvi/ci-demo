@@ -59,7 +59,7 @@ jobs:
         with:
           host:     ${{ secrets.EC2_HOST }}
           username: ubuntu
-          key:      ${{ secrets.EC2_SSH_KEY }}
+          key:      ${{ secrets.SEC_EC2_SSH }}
           script: |
             docker pull ${{ env.IMAGE_NAME }}:latest
             docker stop calculator || true
