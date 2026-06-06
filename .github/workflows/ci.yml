@@ -61,7 +61,7 @@ jobs:
           username: ubuntu
           key:      ${{ secrets.SEC_EC2_SSH }}
           script: |
-            docker pull ${{ env.IMAGE_NAME }}:latest
+            docker pull ${{ env.calculator }}:latest
             docker stop calculator || true
             docker rm   calculator || true
             docker run -d \
